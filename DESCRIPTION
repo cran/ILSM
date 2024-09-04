@@ -1,7 +1,7 @@
 Package: ILSM
 Title: Analyze Interconnection Structure of Multilayer Interaction
         Networks
-Version: 1.0.3.1
+Version: 1.0.3.2
 Authors@R: c(
     person("WeiCheng", "Sun", , "sunwch2023@lzu.edu.cn", role = c("aut", "cre")),
     person("Chuan", "Yan", , "yanchuan@lzu.edu.cn", role = c("aut")),
@@ -14,13 +14,14 @@ Encoding: UTF-8
 RoxygenNote: 7.3.1
 Imports: stats, Matrix, igraph
 Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 3.5.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2024-07-25 08:23:55 UTC; Admin
+Packaged: 2024-09-04 07:28:42 UTC; Admin
 Author: WeiCheng Sun [aut, cre],
   Chuan Yan [aut],
   Yangyang Zhao [aut]
 Maintainer: WeiCheng Sun <sunwch2023@lzu.edu.cn>
 Repository: CRAN
-Date/Publication: 2024-07-25 09:00:01 UTC
+Date/Publication: 2024-09-04 08:20:02 UTC

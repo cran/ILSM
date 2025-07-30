@@ -42,11 +42,11 @@ test_that("Input a big network data", {
                    "Error: please input a large 'number of interconnecting species >=4' network data!!!")
    }
 
-   MAT <- build_net(11,22,21,0.2,asmatrices=TRUE)
+   MAT <- build_toy_net(11,22,21,0.2,output_matrices=TRUE)
    expect_error(icmotif_role(t(MAT[[3]]),t(MAT[[4]])),
                 "Error: please input a large 'number of interconnecting species >=4' network data!!!")
 
-   MA<-build_net(5,3,3,0.9)
+   MA<-build_toy_net(5,3,3,0.9)
    expect_error(icmotif_role(MA),
                 "Error: please input a large 'number of interconnecting species >=4' network data!!!")
    m8<-matrix(1:6,3,2)
@@ -64,10 +64,25 @@ test_that("Make sure the function is implemented", {
    m2<-matrix(sample(c(rep(1,13),rep(0,2))),5,3)
    rownames(m2)<-c(paste0("species",seq=c(1,3,2,5,4)))
    N<-icmotif_role(m1,m2)
+   M<-icmotif_role(m1,m2,TRUE)
    expect_identical(class(N),
                     c("matrix","array"))
    expect_identical(ncol(N),
                     70L)
+   expect_identical(ncol(M),
+                    70L)
    expect_length(rownames(N),
                  5L)
+
+   m3<-matrix(sample(c(rep(1,9),rep(0,3))),4,3)
+   rownames(m3)<-paste0("species",seq=1:4)
+   m4<-matrix(sample(c(rep(1,13),rep(0,3))),4,4)
+   rownames(m4)<-c(paste0("species",seq=c(1,3,2,4)))
+   M<-icmotif_role(m3,m4)
+   expect_identical(class(M),
+                    c("matrix","array"))
+   expect_identical(ncol(M),
+                    70L)
+   expect_length(rownames(M),
+                 4L)
 })

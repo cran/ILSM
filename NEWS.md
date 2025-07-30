@@ -1,10 +1,30 @@
-# ILSM 1.0.3.2 *2024-07-04*
+# ILSM 1.1.0.1 *2025-7-28*
+
+Version: ILSM 1.1.0.1
+
+Changed a lot of details to pass CRAN checks and update the latest state.
+
+# ILSM 1.1.0 *2025-5-01*
+
+Version: ILSM 1.1.0
+
+Many modifications were accepted and we added some new functions: {ig_icmotif_count}, {ig_icmotif_role}, etc
+
+# ILSM 1.0.3.3 *2024-11-01*
+
+Version: ILSM 1.0.3.3
+
+We added the function {node_icc}. We will temporarily suspend the development of node versatility within the multilayer network for function {node_cv}.
+
+Renamed the title: Analyze Interconnection Structure of Tripartite Interaction Networks.
+
+# ILSM 1.0.3.2 *2024-08-04*
 
 Version: ILSM 1.0.3.2
 
 We added the dataset: "PPH_Coltparkmeadow"!!! Such as: data(PPH_Coltparkmeadow).
 
-# ILSM 1.0.3.1 *2024-07-13*
+# ILSM 1.0.3.1 *2024-7-13*
 
 Version: ILSM 1.0.3.1
 
@@ -18,7 +38,7 @@ Plotted the new definition of the multilayer interaction network.(Detailed in Vi
 
 Updating!!!
 
-# ILSM 1.0.3 *2024-04-27*
+# ILSM 1.0.3 *2024-4-27*
 
 Version: ILSM 1.0.3
 
@@ -32,7 +52,7 @@ Modify the description of some functions for better understanding.
 
 Unpublished！！！
 
-# ILSM 1.0.2 *2024-04-7*
+# ILSM 1.0.2 *2024-4-7*
 
 Version: ILSM 1.0.2
 
@@ -40,7 +60,7 @@ For the functions: {motif_count()}; {Midlayer_role()}; {subnet_cor()}; {Hc()}; {
 
 We have modified the inputting requirements for matrix data and the handling of data when the function inputting data type is matrix.
 
-# ILSM 1.0.1 *2024-03-31*
+# ILSM 1.0.1 *2024-3-31*
 
 Version: ILSM 1.0.1
 

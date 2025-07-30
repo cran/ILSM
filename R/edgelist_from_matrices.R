@@ -1,4 +1,20 @@
-edgelist_from_matrices<-function(mat1,mat2,isDirected1=T,isDirected2=T){
+#' Convert interaction matrices into a list of vector of edges.
+#'
+#' @param mat1 A matrix.
+#' @param mat2 A matrix.
+#' @param isDirected1 Logical; Default TRUE.
+#' @param isDirected2 Logical; Default TRUE.
+#'
+#' @encoding UTF-8
+#'
+#' @return
+#' An extended link list (ELL). This is a table with five columns (but can
+#' contain more if link attributes exist). Link lists can also be called edge
+#' lists (these are interchangeable terms)
+#'
+#' @noRd
+
+edgelist_from_matrices<-function(mat1,mat2,isDirected1=TRUE,isDirected2=TRUE){
    if(is.null(rownames(mat1)) | is.null(rownames(mat2))){
       rownames(mat1)<-paste0("mid_spe",seq=1:nrow(mat1))
       rownames(mat2)<-paste0("mid_spe",seq=1:nrow(mat2))
